@@ -1,0 +1,16 @@
+Functions play an important role in C program development.
+Dividing programs into functions is one of the major principles of top-down,structured programming.
+Another advantage of using functions is that it is possible to resize the size of the program by calling and using them at different places in the program.
+Syntax...
+void show();  //function declaration
+main()
+{
+  show();   //function calling
+}
+void show() //function defintion
+{
+  ''''      //function body
+}
+
+
+
