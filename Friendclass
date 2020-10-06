@@ -1,0 +1,29 @@
+A friend class can access private and protected members of another class in which it's declared as friend.
+
+#include<iostream>
+using namespace std;
+
+class ABC{
+private:
+    int a=2;
+    char let='s';
+public:
+    friend class xyz;
+};
+
+class xyz{
+private:
+    int num;
+public:
+    void show(ABC obj){
+        cout<<"a="<<obj.a<<endl<<"let="<<obj.let<<endl;
+    }
+};
+
+int main()
+{
+    ABC obj;
+    xyz obj2;
+    obj2.show(obj);
+    return 0;
+}
