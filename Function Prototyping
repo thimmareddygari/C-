@@ -1,0 +1,22 @@
+Functioning prototyping is one of the major improvements addded to c++ funcions.
+The prototype describes the function interface to the compiler by giving details such as the number and the type of arguments and the type of return values.
+With function prototyping, a template is always used when declarig and defining a function.
+When a function is called ,the compiler uses the template to ensure that proper arguments are passed and the return values is treared correctly.
+Funtion prototyping is a declaration statement inthe calling program and is of the following form:
+  type function-name(arugument list);
+  
+  float volume(int x, float y,float z);
+  float volume(int x,float y ,z) is illegal
+
+In function declaration the name of the arguments are optional.
+float volume(int,float,float) is acceptable.
+
+In the function definition, names are required because the arguments must be referenced inside the function:
+EX:
+  float volume(int a ,float b, floatc){
+      float v=a*b*c;
+  }
+  
+ In c++ ,
+      void display(void);
+      means that the function doesn't pass any parameters.
