@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+class demo{
+private:
+    int a;
+public:
+    void set(int x){
+        a=x;
+    }
+    void sum(demo obj,demo obj1){
+        a=obj.a+obj1.a;
+    }
+    void print(){
+        cout<<"Value of a="<<a<<endl;
+    }
+};
+int main()
+{
+    demo obj,obj1,obj3;
+    obj.set(10);
+    obj1.set(30);
+
+    obj3.sum(obj,obj1);
+    obj.print();
+    obj1.print();
+    obj3.print();
+    return 0;
+}
