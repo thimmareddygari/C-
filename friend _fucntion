@@ -1,0 +1,28 @@
+Similar to friend class, this function can access the private and protected members of another class.
+A global function can also be declared as friend
+
+#include<iostream>
+using namespace std;
+
+class ABC{
+private:
+    int a=3;
+    int b=4;
+public:
+    friend void disp(ABC obj);  //friend function declaration
+};
+
+//global function
+void disp(ABC obj){
+    obj.a--;
+    obj.b++;
+    cout<<obj.a<<endl;
+    cout<<obj.b<<endl;
+}
+
+int main()
+{
+    ABC obj;
+    disp(obj);
+    return 0;
+}
